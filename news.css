@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color:green;
+    background-image: url("./carx81.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+ 
+    background-attachment: fixed;
+    
+
+
+
+}
+
+
+
+
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(5, 250, 5);
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  

@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+    color:rgb(15, 15, 15);
+    background-image: url("./carx81.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-position: center; */
+    background-attachment: scroll;
+    
+
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin: 0 40px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(5, 250, 5);
+  };
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust as per your grid requirement */
+    gap: 10px; /* Adjust the gap between items */
+  }
+  
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .grid-item img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.8s ease;
+  }
+  
+  .grid-item:hover img {
+    transform: rotateY(360deg);
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .grid-item:hover .text {
+    opacity: 1;
+    pointer-events: auto;
+  }
